@@ -467,31 +467,43 @@ img {
 } */
 
 .modal {
-  /* position: absolute; */
+  position: relative;
+  /* position: absolute;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 2px 1px 0 rgba(0, 0, 0, 0.2);
   background: #fcfcfc;
   border-radius: 4px;
-  max-width: 408px;
-  max-height: 584px;
+  width: 408px;
+  height: 584px;
 }
 
 .modal-btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 100%;
-  fill: #e7e9fc;
-  stroke-width: 1px;
-  stroke: rgba(0, 0, 0, 0.1);
+  position: absolute;
+  top: 24px;
+  right: 24px;
   width: 24px;
   height: 24px;
+  cursor: pointer;
+  border: none;
+  padding: 0;
+
+  border-radius: 100%;
+
+  stroke-width: 1px;
+  stroke: rgba(0, 0, 0, 0.1);
+}
+
+.modal-btn-icon {
+  fill: #e7e9fc;
 }
 
 .modal-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -499,36 +511,69 @@ img {
   text-align: center;
   color: #2e2f42;
   padding-bottom: 16px;
+  padding-top: 72px;
 }
 
 .modal-form {
   display: flex;
-  gap: 8px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 32px;
+}
+
+.modal-form-group {
+  display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 0 24px;
+  gap: 4px;
+  padding-bottom: 8px;
 }
 
 .modal-form-label {
-  display: flex;
-  gap: 4px;
-  width: 360px;
-  height: 58px;
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 12px;
+
+  /* line-height: 14px; */
   line-height: 1.16667;
   letter-spacing: 0.04em;
   color: #8e8f99;
 }
 
-.modal-form-img {
+.modal-form-input {
+  position: relative;
   display: flex;
-  justify-content: center;
-  border: 1px solid #4d5ae5;
+  /* border: 1px solid #4d5ae5; */
   border-radius: 4px;
   width: 360px;
   height: 40px;
 }
+
+.form-img {
+  position: absolute;
+  left: 16px;
+  top: 8px;
+  fill: #2e2f42;
+}
+
+.form-input {
+  border-radius: 4px;
+  width: 360px;
+  height: 40px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+}
+
+
+.form-input:focus {
+  border: 1px solid #4d5ae5;
+  outline: none;
+}
+
+input {
+  padding-left: 38px;
+}
+
 
 .modal-form-button {
   background: #4d5ae5;
