@@ -531,7 +531,6 @@ img {
 }
 
 .modal-form-label {
-  font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 12px;
 
@@ -544,16 +543,33 @@ img {
 .modal-form-input {
   position: relative;
   display: flex;
-  /* border: 1px solid #4d5ae5; */
   border-radius: 4px;
   width: 360px;
   height: 40px;
 }
 
+.modal-form-coment {
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 4px;
+  width: 360px;
+  height: 120px;
+  padding: 8px 16px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16667;
+  letter-spacing: 0.04em;
+  color: rgba(46, 47, 66, 0.4);
+}
+
+textarea {
+  resize: none;
+}
+
 .form-img {
   position: absolute;
   left: 16px;
-  top: 8px;
+  top: 50%;
+  transform: translateY(-50%);
   fill: #2e2f42;
 }
 
@@ -564,8 +580,12 @@ img {
   border: 1px solid rgba(46, 47, 66, 0.4);
 }
 
+input:focus+.form-img {
+  fill: #4d5ae5;
+}
 
-.form-input:focus {
+.form-input:focus,
+.modal-form-coment:focus {
   border: 1px solid #4d5ae5;
   outline: none;
 }
