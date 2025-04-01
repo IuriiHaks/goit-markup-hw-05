@@ -488,14 +488,11 @@ img {
   width: 24px;
   height: 24px;
   cursor: pointer;
-  /* border: none; */
   padding: 0;
   background-color: #e7e9fc;
   border: 1px solid rgba(0, 0, 0, 0.1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
   border-radius: 50%;
-
   stroke-width: 1px;
   stroke: rgba(0, 0, 0, 0.1);
 }
@@ -539,7 +536,6 @@ img {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* gap: 4px; */
   margin-bottom: 8px;
 }
 
@@ -620,8 +616,6 @@ input {
 
 .modal-form-checkbox {
   margin-bottom: 24px;
-  /* width: 360px;
-  height: 16px; */
 }
 
 .chechbox-label-policy {
@@ -664,7 +658,6 @@ input {
   height: 8px;
   position: relative;
   border-radius: 2px;
-  /* fill: #404bbf; */
   border: 1px solid #404bbf;
 }
 
@@ -697,7 +690,6 @@ input {
 .footer-container {
   display: flex;
   align-items: baseline;
-  /* gap: 16px; */
 }
 
 .footer-text {
