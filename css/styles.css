@@ -604,7 +604,7 @@ input:focus+.form-img {
 }
 
 .modal-form-wrap {
-  padding-bottom: 16px;
+  margin-bottom: 16px;
 }
 
 .form-input:focus,
@@ -622,12 +622,17 @@ input {
 }
 
 .chechbox-label-policy {
-  font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: #8e8f99;
+}
+
+.modal-check:checked+.chechbox-label-policy .span-text {
+  background-color: #404bbf;
+  border: none;
+  fill: #F4F4FD;
 }
 
 .span-text {
