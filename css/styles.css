@@ -620,6 +620,8 @@ input {
 
 .modal-form-checkbox {
   margin-bottom: 24px;
+  width: 360px;
+  height: 16px;
 }
 
 .chechbox-label-policy {
