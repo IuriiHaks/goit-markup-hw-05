@@ -795,6 +795,11 @@ input {
   background-color: transparent;
   outline: transparent;
   color: #fff;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  color: #fff;
 }
 
 placeholder {
@@ -819,4 +824,8 @@ placeholder {
   background: #4d5ae5;
   cursor: pointer;
   border: none;
+}
+
+.form-subscribe-img {
+  padding-left: 16px;
 }
